@@ -1,0 +1,50 @@
+#resume-page-container {
+    height: 80vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #FFD3B5, #ffffff);
+    color: white;
+}
+
+#button-container {
+    width: 100%;
+    height: 9vh;
+    display: grid;
+    grid-template-columns: 30vw 40vw 30vw ;
+    align-items: center;
+}
+
+#button-container > button {
+    margin: 0 auto;
+    /* padding: 1.5em; */
+    font-size: 1.5em;
+}
+
+.inactive-button {
+    cursor: none;
+    background-color: white;
+}
+
+button {
+    margin: 1em;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+#download-icon > svg {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    margin-left: 5em;
+}
+
+#download-icon :hover {
+    color: black;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

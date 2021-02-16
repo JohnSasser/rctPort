@@ -1,0 +1,78 @@
+#aboutMe-container {
+    height: 85vh;
+    /* width: 100vw; */
+    /* top: 10vh; */
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+}
+
+.about-section-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.about-section-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    line-height: 1.35em;
+    color: #213a50de;
+}
+
+#technologies-icons-parent-div {
+    height: 40vh;
+    background: linear-gradient( #a8e6cea4 , #ffffffcc);
+    width: 100vw;
+    padding: 1.4em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#front-end-vectors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#back-end-vectors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#tools-vectors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.svg-box {
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    height: 150px;
+    width: 150px;
+    margin: 0 4em;
+}
+
+.text {
+    margin: 5em;
+}
+
+#headshot-image {
+    height: 80%;
+    border-radius: 50%;
+}

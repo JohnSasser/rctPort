@@ -1,0 +1,43 @@
+.footer-parent-div {
+    display: grid;
+    position: fixed;
+    bottom: -2%;
+    left: 0;
+    /* align-items: center;
+    justify-content: center; */
+    grid-template-columns: 58% 42%;
+    font-size: 1.75em;
+    color: #ffffff;
+    width: 100vw;
+    height: 12vh;
+    background-image: url(../../Wave-footer-3.svg);
+}
+
+.loading-io-attribution {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 1em; 
+    font-size: .75em;
+}
+
+.loading-io-attribution > a:hover {
+    text-decoration: none;
+    color: rgb(212, 211, 211);
+}
+
+.loading-io-attribution > a {
+    padding: .5em;
+    font-size: smaller;
+    color: #f18686d7;
+    text-decoration: none;   
+}   
+
+.name-date {
+    cursor: none;
+    padding-top: 1em;
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
