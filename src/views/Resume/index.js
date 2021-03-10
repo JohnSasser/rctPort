@@ -8,7 +8,9 @@ import resume from '../../software-engineer-resume.pdf';
 import './style.css';
 import Footer from '../../components/Footer';
 
-let pdfFilePath = process.env.PUBLIC_URL + '/software-engineer-resume.pdf';
+let planeResume = process.env.PUBLIC_URL + '/software-engineer-resume.pdf';
+let yellowResume = process.env.PUBLIC_URL + '/dev-resume-yellow-background.pdf';
+let blueResume = process.env.PUBLIC_URL + '/dev-resume-blue-background.pdf';
 
 export default function Resume() {
   // const [file, setFile] = useState();
@@ -35,7 +37,6 @@ export default function Resume() {
       <div id="button-container">
         {pageNumber > numPages - 1 ? (
           <Button
-            // style={{ width: '80px', height: '80px', margin: '0 auto' }}
             onClick={previousPage}
             id="button-forward"
             variant={pageNumber > numPages - 1 ? 'info' : 'secondary'}
@@ -47,7 +48,6 @@ export default function Resume() {
           </Button>
         ) : (
           <Button
-            // style={{ width: '80px', height: '80px', margin: '0 auto' }}
             onClick={previousPage}
             id="button-forward"
             variant={pageNumber > numPages - 1 ? 'info' : 'secondary'}
@@ -63,14 +63,14 @@ export default function Resume() {
           <p>
             Page {pageNumber} of {numPages}
           </p>
-          <a id="download-icon" href={pdfFilePath} target="blank">
+          <a id="download-icon" href={yellowResume} target="blank">
+            <span id="download-icon-text"> OPEN PDF </span>
             <FaFileDownload />
           </a>
         </div>
 
         {pageNumber > numPages - 1 ? (
           <Button
-            // style={{ width: '80px', height: '80px', margin: '0 auto' }}
             onClick={nextPage}
             id="button-back"
             variant={pageNumber > numPages - 1 ? 'secondary' : 'info'}
@@ -84,7 +84,6 @@ export default function Resume() {
           </Button>
         ) : (
           <Button
-            // style={{ width: '80px', height: '80px', margin: '0 auto' }}
             onClick={nextPage}
             id="button-back"
             variant={pageNumber > numPages - 1 ? 'secondary' : 'info'}
@@ -103,7 +102,7 @@ export default function Resume() {
       >
         <Document
           id="react-pdf-doc"
-          file={pdfFilePath}
+          file={yellowResume}
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} />

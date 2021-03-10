@@ -6,6 +6,7 @@
     grid-template-columns: 40vw 60vw;
 }
 
+
 .about-section-pic {
     display: flex;
     align-items: center;
@@ -75,4 +76,37 @@ svg {
 #headshot-image {
     height: 80%;
     border-radius: 50%;
+}
+
+
+@media screen and (max-width: 800px) {
+#aboutMe-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    width: 100vw;
+    /* padding: 2em; */
+    overflow: scroll;
+}
+
+#technologies-icons-parent-div {
+    margin-top: 15em;
+}
+
+.about-section-pic {
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 15em;
+}
+
+.about-section-text {
+    width: 100vw;
+}
+
+svg {
+    height: 3.5em;
+    width: 3.5em;
+    margin: 2em;
+}
+
 }

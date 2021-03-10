@@ -2,6 +2,8 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import { frontEndSVGs, backEndSVGs, toolsSVGs } from '../../utils/vectorJSX.js';
 
+import { Container, Row, Col } from 'react-bootstrap';
+
 import './style.css';
 
 const AboutMe = () => {
