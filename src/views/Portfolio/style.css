@@ -23,6 +23,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 /* PORTFOLIO CARD ANIMATIONS */
@@ -47,6 +49,7 @@
 .selected-project-description-div {
     overflow: scroll;
 }
+
 .selected-project-card-container {
     height: 85vh;
     width: 100vw;
