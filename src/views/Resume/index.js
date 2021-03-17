@@ -3,14 +3,14 @@ import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { Button } from 'react-bootstrap';
 import { FaFileDownload } from 'react-icons/fa';
 
-import resume from '../../software-engineer-resume.pdf';
+// import resume from '../../software-engineer-resume.pdf';
 
 import './style.css';
 import Footer from '../../components/Footer';
 
-let planeResume = process.env.PUBLIC_URL + '/software-engineer-resume.pdf';
+// let planeResume = process.env.PUBLIC_URL + '/software-engineer-resume.pdf';
 let yellowResume = process.env.PUBLIC_URL + '/dev-resume-yellow-background.pdf';
-let blueResume = process.env.PUBLIC_URL + '/dev-resume-blue-background.pdf';
+// let blueResume = process.env.PUBLIC_URL + '/dev-resume-blue-background.pdf';
 
 export default function Resume() {
   // const [file, setFile] = useState();
