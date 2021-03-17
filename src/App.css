@@ -33,11 +33,21 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* FOOTER MEDIA QUERY */
+@media screen and (max-width: 800px) {
+  .footer-parent-div {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: -5vh;
+    /* left: 0; */
+    font-size: 1.25em;
+    /* color: #ffffff; */
+    width: 100vw;
+    height: 20vh;  }
+
+    .footer-parent-div > .loading-io-attribution {
+      width: 0;
+    }
 }

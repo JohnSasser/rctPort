@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Link,
   useRouteMatch,
@@ -13,10 +13,19 @@ import './style.css';
 import { Button } from 'react-bootstrap';
 
 const Portfolio = () => {
+  const [hover, setHover] = useState(false);
   let { path, url } = useRouteMatch();
   // console.log('path', path, ' || url', url);
 
-  function ProjectCard() {
+  function mouseOver(x) {
+    setHover(x.backgroundColor);
+  }
+
+  function mouseOut() {
+    setHover(false);
+  }
+
+  function SelectedProjectCard() {
     const { projectID } = useParams();
     // console.log(appObjects[projectID].imagePath);
 
@@ -24,6 +33,10 @@ const Portfolio = () => {
     // path of `/topics/:projectID`. The `:projectID` portion
     // of the URL indicates a placeholder that we can
     // get from `useParams()`.
+
+    // useEffect(setHover, []);
+
+    console.log('hover: ', hover);
 
     return (
       <>
@@ -74,22 +87,67 @@ const Portfolio = () => {
         <Route exact path={url}>
           <div id="portfolio-container">
             {Object.values(appObjects).map((x, idx) => {
-              // let index = x[idx];
+              // console.log(x);
               return (
-                <Link
-                  to={`${url}/${x.routeTitle}`}
-                  key={x.imagePath[idx]}
-                  className={`project-card-container`}
-                >
-                  <img
-                    key={x.imagePath[idx]}
-                    className={`project-image`}
-                    alt={x.name}
-                    src={process.env.PUBLIC_URL + `${x.imagePath}`}
-                    target="blank"
-                    noreferrer="true"
-                  />
-                </Link>
+                <>
+                  {!hover ? (
+                    <Link
+                      to={`${url}/${x.routeTitle}`}
+                      key={x.imagePath[idx]}
+                      className={`project-card-container`}
+                    >
+                      <img
+                        key={x.imagePath[idx]}
+                        className={`project-image`}
+                        alt={x.name}
+                        src={process.env.PUBLIC_URL + `${x.imagePath}`}
+                        target="blank"
+                        noreferrer="true"
+                        onMouseEnter={() => mouseOver(x)}
+                        onMouseLeave={() => mouseOut()}
+                      />
+                    </Link>
+                  ) : (
+                    <>
+                      {x.backgroundColor === hover ? (
+                        <Link
+                          to={`${url}/${x.routeTitle}`}
+                          key={x.imagePath[idx]}
+                          className={`project-card-container`}
+                          style={{ backgroundColor: `${x.backgroundColor}` }}
+                        >
+                          <img
+                            key={x.imagePath[idx]}
+                            className={`project-image`}
+                            alt={x.name}
+                            src={process.env.PUBLIC_URL + `${x.imagePath}`}
+                            target="blank"
+                            noreferrer="true"
+                            onMouseEnter={() => mouseOver(x)}
+                            onMouseOut={() => mouseOut()}
+                          />
+                        </Link>
+                      ) : (
+                        <Link
+                          to={`${url}/${x.routeTitle}`}
+                          key={x.imagePath[idx]}
+                          className={`project-card-container`}
+                        >
+                          <img
+                            key={x.imagePath[idx]}
+                            className={`project-image`}
+                            alt={x.name}
+                            src={process.env.PUBLIC_URL + `${x.imagePath}`}
+                            target="blank"
+                            noreferrer="true"
+                            onMouseEnter={() => mouseOver(x)}
+                            onMouseOut={() => mouseOut()}
+                          />
+                        </Link>
+                      )}
+                    </>
+                  )}
+                </>
               );
             })}
             <Footer />
@@ -97,7 +155,7 @@ const Portfolio = () => {
         </Route>
 
         <Route path={`${url}/:projectID`}>
-          <ProjectCard />
+          <SelectedProjectCard />
         </Route>
       </Switch>
     </>
