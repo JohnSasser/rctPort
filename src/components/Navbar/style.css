@@ -6,7 +6,9 @@
     top: 0;
     min-width: 100vw;
     max-width: 100vw;
-    /* border-bottom: solid .05em #355b7da9; */
+    -webkit-box-shadow: 0 2px  #7b91bc;
+    -moz-box-shadow: 0 2px  #8496bb;
+    box-shadow: 0 -2px 2.5px #6066718f inset;
 }
 
 .links-1 {
