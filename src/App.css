@@ -6,12 +6,6 @@
   color: #525b5f ;
 }
 
-/* COLOR PALETTE FOR APPLICAITON:
-
- A8E6CE   DCEDC2   FFD3B5   FFAAA6   FF8C94 
-*/
-
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
