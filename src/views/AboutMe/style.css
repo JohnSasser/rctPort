@@ -25,13 +25,14 @@
 
 #technologies-icons-parent-div {
     height: 40vh;
-    background: linear-gradient( #a8e6cea4 , #ffffffcc);
+    background: linear-gradient(#75819c, #ffffffcc);
     width: 100vw;
     padding: 1.4em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    box-shadow: 2px 0px .5px 0 rgba(32, 49, 55, 0.341) inset;
 }
 
 #front-end-vectors {

@@ -25,12 +25,13 @@ export default function Resume() {
   function nextPage() {
     setPageNumber(pageNumber + 1);
   }
+  
   function previousPage() {
     setPageNumber(pageNumber - 1);
   }
 
-  console.log('numPages:', numPages);
-  console.log('pageNumber:', pageNumber);
+  // console.log('numPages:', numPages);
+  // console.log('pageNumber:', pageNumber);
   return (
     <div id="resume-page-container">
       {' '}

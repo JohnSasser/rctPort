@@ -1,10 +1,25 @@
 import React from 'react';
-
 import './style.css';
+import smallSVG from '../../Wave-footer-7.svg';
+
+const screenWidth = window.innerHeight;
+// console.log(screenWidth);
 
 const Footer = () => {
+  const LrgSVG = process.env.PUBLIC_URL + '/images/japanese-waves.jpg';
+  const footerSVG = screenWidth > 1000 ? LrgSVG : smallSVG;
+  console.log(`footer SVG chosen from screen width === ${footerSVG}`);
   return (
-    <div className="footer-parent-div">
+    <div
+      key={`${footerSVG}`}
+      className="footer-parent-div"
+      style={{
+        backgroundImage: `url(${footerSVG})`,
+        width: '100%',
+        webkitMaskImage:
+          'linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))',
+      }}
+    >
       <p className="name-date">
         <span>
           John Sasser <span>&#169;</span> 2020{' '}
