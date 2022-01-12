@@ -6,7 +6,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-// import Footer from '../../components/Footer';
+import Footer from '../../components/Footer';
 import { appObjects } from '../../utils/appObject';
 import { Button } from 'react-bootstrap';
 
@@ -150,7 +150,7 @@ const Portfolio = () => {
                 </>
               );
             })}
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </Route>
 

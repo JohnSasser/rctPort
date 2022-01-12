@@ -5,7 +5,7 @@ const appObjects = {
     imagePath: '/images/MAHS-data-explorer.png',
     backgroundColor: '#537a8e',
     description:
-      'The Metro Atlanta Housing Strategy provides detailed information and data about the region’s housing market and offers a set of actionable steps that local communities can consider taking to address their housing issues.  (Still Under Development)',
+      'The Metro Atlanta Housing Strategy zone app, is a data analysts desktop tool. It provides detailed information and data about the region’s housing market and offers a set of actionable steps that local communities can consider taking to address their housing issues.  (Still Under Development)',
     role:
       'Front End Developer: I worked with team members to design a layout that provides clear and concise usability.  We aggregate data on population Percent, Average, Weighted Average, & Sum data against the MAHS 10 Subareas of atlanta.   Purpose-built to provide cross-reference data to city planners.  We set out to provide a better solution than the current options that were slow and clunky.',
     link: 'https://metroatlhousing-data-explorer.herokuapp.com/',
