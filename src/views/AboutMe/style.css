@@ -99,6 +99,7 @@ svg {
 }
 
 #technologies-icons-parent-div {
+    height: 100vh;
     padding-bottom: 3em;
     overflow: scroll;
 }
