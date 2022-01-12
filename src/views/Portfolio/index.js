@@ -6,11 +6,11 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Footer from '../../components/Footer';
+// import Footer from '../../components/Footer';
 import { appObjects } from '../../utils/appObject';
+import { Button } from 'react-bootstrap';
 
 import './style.css';
-import { Button } from 'react-bootstrap';
 
 const Portfolio = () => {
   const [hover, setHover] = useState(false);
@@ -36,7 +36,7 @@ const Portfolio = () => {
 
     // useEffect(setHover, []);
 
-    console.log('hover: ', hover);
+    // console.log('hover: ', hover);
 
     return (
       <>
@@ -76,7 +76,7 @@ const Portfolio = () => {
             noreferrer="true"
           />
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </>
     );
   }
@@ -150,7 +150,7 @@ const Portfolio = () => {
                 </>
               );
             })}
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </Route>
 

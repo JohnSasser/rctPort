@@ -1,6 +1,6 @@
 #portfolio-container {
     top: 10vh;
-    height: 80vh;
+    /* height: 80vh; */
     width: 100vw;
     background: linear-gradient(to bottom, #6E6E6E, #ffffff);
     display: flex;

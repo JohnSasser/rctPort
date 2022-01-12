@@ -1,19 +1,26 @@
 #email-container {
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 45vw 55vw;
+    /* height: 80vh; */
+    width: 100vw;
+    height: 100vh;
+    /* display: grid;
+    grid-template-columns: 45vw 55vw; */
     background: linear-gradient( #75819c,  #fefefe38  )  bottom no-repeat;
     /* margin: 3em; */
     /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
 }
 
 #email-container > form {
-    width: 75%;
+    justify-content: ;
+    /* width: 75%;
     margin: 0 auto;
     margin-top: 5em;
     margin-left: 5em;
-    /* background-color:#FF8C94; */
-    padding: 25px;
+    /* background-color:#FF8C94; 
+    padding: 25px;*/
 }
 
 .contactContainer {

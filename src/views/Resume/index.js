@@ -25,7 +25,7 @@ export default function Resume() {
   function nextPage() {
     setPageNumber(pageNumber + 1);
   }
-  
+
   function previousPage() {
     setPageNumber(pageNumber - 1);
   }
@@ -109,7 +109,7 @@ export default function Resume() {
           <Page pageNumber={pageNumber} />
         </Document>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
