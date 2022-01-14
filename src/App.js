@@ -9,10 +9,33 @@ import AboutMe from './views/AboutMe';
 import Resume from './views/Resume';
 
 import './App.css';
+import { useEffect, useState, useContext } from 'react';
+
+// const appWidthContext = React.createContext(0);
+// const WidthContext = React.createContext(0);
 
 function App() {
+  
+  const WidthContext = useContext(0);
+
+  const [width, setWindowWidth] = useState(0);
+  const updateDimensions = () => {
+    const width = window.innerWidth;
+    setWindowWidth(width);
+  };
+  useEffect(() => {
+    updateDimensions();
+
+    window.addEventListener('resize', updateDimensions);
+
+    return () => window.removeEventListener('resize', updateDimensions);
+  }, []);
+
+  console.log(`windowWidth = ${width}`);
+
   return (
     <div className="App">
+      {/* <WidthContext.Provider value={{ width }}> */}
       <Router>
         <Navbar />
         <Route exact path="/">
@@ -31,9 +54,10 @@ function App() {
           <ContactMe />
         </Route>
         <Route path="/resume">
-          <Resume />
+          <Resume windowWidth={width} />
         </Route>
       </Router>
+      {/* </WidthContext.Provider> */}
     </div>
   );
 }

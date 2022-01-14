@@ -8,7 +8,7 @@ const screenWidth = window.innerHeight;
 const Footer = () => {
   const LrgSVG = process.env.PUBLIC_URL + '/images/japanese-waves.jpg';
   const footerSVG = screenWidth > 1000 ? LrgSVG : smallSVG;
-  console.log(`footer SVG chosen from screen width === ${footerSVG}`);
+  // console.log(`footer SVG chosen from screen width => ${footerSVG}`);
   return (
     <div
       key={`${footerSVG}`}
