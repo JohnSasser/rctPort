@@ -89,6 +89,7 @@ a > svg {
     }
     #email-container {
         font-size: .5em;
+        padding-bottom: 8em;
     }
     a > svg {
         height: 1.5em;
