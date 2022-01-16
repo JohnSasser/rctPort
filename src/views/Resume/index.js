@@ -3,36 +3,32 @@ import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { Button } from 'react-bootstrap';
 import { FaFileDownload } from 'react-icons/fa';
 
-// import resume from '../../software-engineer-resume.pdf';
-
 import './style.css';
-import Footer from '../../components/Footer';
+// import Footer from '../../components/Footer';
 
-// let planeResume = process.env.PUBLIC_URL + '/software-engineer-resume.pdf';
 let yellowResume = process.env.PUBLIC_URL + '/dev-resume-yellow-background.pdf';
 // let blueResume = process.env.PUBLIC_URL + '/dev-resume-blue-background.pdf';
 
-export default function Resume() {
-  // const [file, setFile] = useState();
+export default function Resume(props) {
+  // const [pageSize, setPageSize] = useState();
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }) {
-    // setFile(pdfFilePath);
     setNumPages(numPages);
   }
 
   function nextPage() {
     setPageNumber(pageNumber + 1);
   }
-  
+
   function previousPage() {
     setPageNumber(pageNumber - 1);
   }
-
   // console.log('numPages:', numPages);
   // console.log('pageNumber:', pageNumber);
-  return (
+  // console.log(props.windowWidth);
+  return props.windowWidth > 800 ? (
     <div id="resume-page-container">
       {' '}
       <div id="button-container">
@@ -109,7 +105,21 @@ export default function Resume() {
           <Page pageNumber={pageNumber} />
         </Document>
       </div>
-      <Footer />
+    </div>
+  ) : (
+    <div id="resume-page-container">
+      {' '}
+      <div className="center-content">
+        <a id="download-icon" href={yellowResume} target="blank">
+          <FaFileDownload />
+          <br />
+
+          <br />
+          <span id="download-icon-text"> OPEN PDF </span>
+        </a>
+      </div>
     </div>
   );
+
+  // </WidthContext.Consumer>
 }

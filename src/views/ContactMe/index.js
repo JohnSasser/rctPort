@@ -40,7 +40,7 @@ const ContactMe = () => {
                 <FaStrava className="link-icon" />
               </a>
             </span>
-            <MdEmail style={{ height: '2em' }} />{' '}
+            <MdEmail />{' '}
             <span className="contact-credentials">
               cw.john.sasser@gmail.com
             </span>
@@ -55,7 +55,7 @@ const ContactMe = () => {
           target="_blank"
         >
           <Form.Group controlId="exampleForm.ControlInput1">
-            <Form.Label>Name</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               htmlFor="contact"
               name="name"
@@ -66,7 +66,7 @@ const ContactMe = () => {
           </Form.Group>
 
           <Form.Group controlId="exampleForm.ControlInput1">
-            <Form.Label>Email address</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="email"
               htmlFor="contact"
@@ -77,7 +77,7 @@ const ContactMe = () => {
           </Form.Group>
 
           <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Message Field</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               htmlFor="contact"
               name="message"

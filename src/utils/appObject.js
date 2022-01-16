@@ -5,9 +5,9 @@ const appObjects = {
     imagePath: '/images/MAHS-data-explorer.png',
     backgroundColor: '#537a8e',
     description:
-      'The Metro Atlanta Housing Strategy provides detailed information and data about the region’s housing market and offers a set of actionable steps that local communities can consider taking to address their housing issues.  (Still Under Development)',
+      'The Metro Atlanta Housing Strategy zone app, is a data analysts desktop tool. It provides detailed information and data about the region’s housing market and offers a set of actionable steps that local communities can consider taking to address their housing issues.  (Still Under Development)',
     role:
-      'Front End Developer: I worked with team members to design a layout that provides clear usability to the user.  We aggregate population Percent, Average, Weighted Average, & Sum data against the MAHS 10 Subareas of atlanta.   Purpose-built to provide cross-reference data to city planners.  We set out to provide a better solution than the current options that were slow and clunky.',
+      'Front End Developer: I worked with team members to design a layout that provides clear and concise usability.  We aggregate data on population Percent, Average, Weighted Average, & Sum data against the MAHS 10 Subareas of atlanta.   Purpose-built to provide cross-reference data to city planners.  We set out to provide a better solution than the current options that were slow and clunky.',
     link: 'https://metroatlhousing-data-explorer.herokuapp.com/',
   },
   dataNexus: {
@@ -32,6 +32,16 @@ const appObjects = {
     role:
       'Full Stack Developer with a focus on the front end: I wrote a script using Nightmare.js to parse data from the magistrate courts record sites for Clayton, Cobb, Dekalb, Fulton and Gwinnett counties.  I integrated the data onto a charts using the react-Rechats packages. I built and designed the styling/css and layout for the site.',
     link: 'https://metroatlhousing.org/atlanta-region-eviction-tracker/',
+  },
+  AtlantaMotoCrew: {
+    name: 'Atlanta Moto Crew',
+    routeTitle: 'AtlantaMotoCrew',
+    imagePath: '/images/amc-min.png',
+    backgroundColor: '#CA229Eaa',
+    description:
+      'AMC is a Wordpress site showcasing an atlanta based hometown motorcycle & dirtbike racing group.',
+    role: 'Sole Wordpress Developer',
+    link: 'https://atlantamotocrew.wordpress.com/',
   },
   chipperPets: {
     name: 'Chipper Pets',

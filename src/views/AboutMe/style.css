@@ -1,7 +1,4 @@
 #aboutMe-container {
-    height: 85vh;
-    /* width: 100vw; */
-    /* top: 10vh; */
     display: grid;
     grid-template-columns: 40vw 60vw;
 }
@@ -18,20 +15,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40vh;
     line-height: 1.35em;
     color: #213a50de;
+    padding: 3em;
+    font-size: 1.25em;
 }
 
 #technologies-icons-parent-div {
-    height: 40vh;
     background: linear-gradient(#75819c, #ffffffcc);
-    width: 100vw;
     padding: 1.4em;
+    height: 45vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     box-shadow: 2px 0px .5px 0 rgba(32, 49, 55, 0.341) inset;
 }
 
@@ -84,31 +82,26 @@ svg {
 @media screen and (max-width: 800px) {
 #aboutMe-container {
     flex-wrap: wrap;
-    flex-direction: row;
-    display: flex;
-    width: 100vw;
-    /* padding: 2em; */
-    overflow: scroll;
-}
-
-#technologies-icons-parent-div {
-    margin-top: 15em;
-}
-
-.about-section-pic {
-    width: 100vw;
-    height: 60vh;
-    margin-bottom: 15em;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .about-section-text {
-    width: 100vw;
+    font-size: 1.5em;
+    padding: 1em;
 }
 
 svg {
-    height: 3.5em;
-    width: 3.5em;
+    height: 4em;
+    width: 4em;
     margin: 2em;
+}
+
+#technologies-icons-parent-div {
+    height: 100vh;
+    padding-bottom: 3em;
+    overflow: scroll;
 }
 
 }

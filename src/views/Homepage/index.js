@@ -88,9 +88,12 @@ const Homepage = () => {
       <Particles id="tsparticles" options={particleOptions}></Particles>{' '}
       <h1 id="title-line" className="homepage-title">
         {' '}
-        John B Sasser{' '}
+        John Sasser{' '}
       </h1>
-      <h4 className="homepage-title">Software Developer</h4>
+      <h4 className="homepage-title">
+        Web & Mobile <br />
+        Application Developer
+      </h4>
     </div>
   );
 };

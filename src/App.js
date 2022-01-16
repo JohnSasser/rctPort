@@ -9,12 +9,26 @@ import AboutMe from './views/AboutMe';
 import Resume from './views/Resume';
 
 import './App.css';
+import { useEffect, useState, useContext } from 'react';
 
 function App() {
+  const [width, setWindowWidth] = useState(0);
+  const updateDimensions = () => {
+    const width = window.innerWidth;
+    setWindowWidth(width);
+  };
+  useEffect(() => {
+    updateDimensions();
+
+    window.addEventListener('resize', updateDimensions);
+
+    return () => window.removeEventListener('resize', updateDimensions);
+  }, []);
+
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar windowWidth={width} />
         <Route exact path="/">
           <Homepage />
         </Route>
@@ -31,7 +45,7 @@ function App() {
           <ContactMe />
         </Route>
         <Route path="/resume">
-          <Resume />
+          <Resume windowWidth={width} />
         </Route>
       </Router>
     </div>

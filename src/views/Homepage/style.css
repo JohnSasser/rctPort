@@ -6,13 +6,12 @@
     justify-content: center;
     height: 90vh;
     width: 100vw;
-    background-color:transparent;
-    /* cursor: alias; */
+    background-color: transparent;
 }
 
 #title-line {    
     position: absolute;
-    top: 34%; 
+    top: 30%; 
     font-size: 5em;
     background: none;
     z-index: 1;
@@ -22,7 +21,7 @@
     position: absolute;
     width: 100vw;
     margin: 0 auto;
-    top: 45%;
+    top: 50%;
     font-size: 2.5em;
     background: none;
     z-index: 1;
@@ -35,7 +34,21 @@
 }
 
 #tsparticles {
-    z-index: 999999;
+    /* z-index: 999999; */
     height: 100%;
     width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    #title-line {
+        top: 35%;
+        font-size: 3em;
+    }
+    .homepage-title {
+        top: 55%;
+        font-size: 2em;
+    }
+    .tsparticles-canvas-el {
+        background-color: transparent;
+    }
 }

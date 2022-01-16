@@ -63,3 +63,17 @@ button {
 #download-icon :hover {
     color: black;
 }
+
+@media screen and (max-width: 800px) {
+    #download-icon, #download-icon-text {
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
+    #resume-page-container {
+        /* height: 100vh;
+        width: 100vw; */
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+}
