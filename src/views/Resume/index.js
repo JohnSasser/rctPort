@@ -10,8 +10,7 @@ let yellowResume = process.env.PUBLIC_URL + '/dev-resume-yellow-background.pdf';
 // let blueResume = process.env.PUBLIC_URL + '/dev-resume-blue-background.pdf';
 
 export default function Resume(props) {
-  const [pageSize, setPageSize] = useState();
-
+  // const [pageSize, setPageSize] = useState();
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -28,7 +27,7 @@ export default function Resume(props) {
   }
   // console.log('numPages:', numPages);
   // console.log('pageNumber:', pageNumber);
-  console.log(props.windowWidth);
+  // console.log(props.windowWidth);
   return props.windowWidth > 800 ? (
     <div id="resume-page-container">
       {' '}

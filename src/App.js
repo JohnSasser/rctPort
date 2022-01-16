@@ -11,13 +11,7 @@ import Resume from './views/Resume';
 import './App.css';
 import { useEffect, useState, useContext } from 'react';
 
-// const appWidthContext = React.createContext(0);
-// const WidthContext = React.createContext(0);
-
 function App() {
-  
-  const WidthContext = useContext(0);
-
   const [width, setWindowWidth] = useState(0);
   const updateDimensions = () => {
     const width = window.innerWidth;
@@ -31,13 +25,10 @@ function App() {
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
-  console.log(`windowWidth = ${width}`);
-
   return (
     <div className="App">
-      {/* <WidthContext.Provider value={{ width }}> */}
       <Router>
-        <Navbar />
+        <Navbar windowWidth={width} />
         <Route exact path="/">
           <Homepage />
         </Route>
@@ -57,7 +48,6 @@ function App() {
           <Resume windowWidth={width} />
         </Route>
       </Router>
-      {/* </WidthContext.Provider> */}
     </div>
   );
 }
