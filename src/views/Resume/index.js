@@ -8,6 +8,7 @@ import './style.css';
 
 let yellowResume = process.env.PUBLIC_URL + '/dev-resume-yellow-background.pdf';
 // let blueResume = process.env.PUBLIC_URL + '/dev-resume-blue-background.pdf';
+let devResume = process.env.PUBLIC_URL + '/web-dev-resume-blue.pdf';
 
 export default function Resume(props) {
   // const [pageSize, setPageSize] = useState();
@@ -60,7 +61,7 @@ export default function Resume(props) {
           <p>
             Page {pageNumber} of {numPages}
           </p>
-          <a id="download-icon" href={yellowResume} target="blank">
+          <a id="download-icon" href={devResume} target="blank">
             <span id="download-icon-text"> OPEN PDF </span>
             <FaFileDownload />
           </a>
@@ -99,7 +100,7 @@ export default function Resume(props) {
       >
         <Document
           id="react-pdf-doc"
-          file={yellowResume}
+          file={devResume}
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} />
@@ -110,7 +111,7 @@ export default function Resume(props) {
     <div id="resume-page-container">
       {' '}
       <div className="center-content">
-        <a id="download-icon" href={yellowResume} target="blank">
+        <a id="download-icon" href={devResume} target="blank">
           <FaFileDownload />
           <br />
 
