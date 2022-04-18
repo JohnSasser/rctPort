@@ -52,7 +52,7 @@
 .selected-project-card-container {
     height: 90vh;
     width: 100vw;
-    background: linear-gradient(to bottom, #e88300aa, #ffffff);
+    background: linear-gradient(to bottom, #332e27aa, #ffffff);
     display: flex;
     flex-direction: row;
     align-items: center;

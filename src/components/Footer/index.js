@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import smallSVG from '../../Wave-footer-7.svg';
+import smallSVG from '../../assets/Wave-footer-7.svg';
 
 const screenWidth = window.innerHeight;
 // console.log(screenWidth);
