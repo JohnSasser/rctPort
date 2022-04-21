@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Homepage from './views/Homepage';
 import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
-import Portfolio from './views/Portfolio';
+import Portfolio from './views/Portfolio/portfolio';
 import ContactMe from './views/ContactMe';
 import AboutMe from './views/AboutMe';
 import Resume from './views/Resume';
 
 import './App.css';
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   const [width, setWindowWidth] = useState(0);
