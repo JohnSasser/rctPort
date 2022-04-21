@@ -68,10 +68,9 @@ const Portfolio = () => {
                   border: 'none',
                   zIndex: '1',
                 }}
-                className="project-image"
                 key={idx + x.link}
               >
-                <Card.Img variant="top" src={x.imagePath} />
+                <Card.Img className="project-image" src={x.imagePath} />
                 <Card.Body
                   style={{ backgroundColor: '#ffffff', padding: '2em' }}
                 >
