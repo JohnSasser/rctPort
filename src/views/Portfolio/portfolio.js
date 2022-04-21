@@ -12,42 +12,69 @@ import backgroundsvg from '../../assets/chevron-line-pattern.svg';
 import { appObjects } from '../../utils/appObjectsArray';
 import SelectedProject from '../../components/selectedProject';
 
-import './style.css';
+import './styleSheet.css';
 
 const Portfolio = () => {
   let { path, url } = useRouteMatch();
-  //   const { projectID } = useParams();
 
   return (
     <div
-      style={{
-        width: '100vw',
-        backgroundImage: `url(${backgroundsvg})`,
-        display: 'flex',
-        justifyContent: 'space-around',
-        flexWrap: 'wrap',
-        backgroundColor: '#babab9'
-      }}
+      id="portfolio"
+      style={
+        {
+          // backgroundImage: `url(${backgroundsvg})`,
+        }
+      }
     >
       <Switch>
         <Route exact path={url}>
+          <div
+            style={{
+              width: '100vw',
+              backgroundColor: '#6C6E70 ',
+              padding: '2em',
+            }}
+          >
+            <h1
+              style={{
+                fontSize: '5em',
+                color: 'white',
+                opacity: '.8',
+                paddingTop: '.5em',
+              }}
+            >
+              Applications & Sites
+            </h1>
+            <h4
+              style={{
+                fontSize: '2em',
+                color: 'white',
+                opacity: '.65',
+                margin: '.5em',
+                padding: '1.5em',
+              }}
+            >
+              Check out the latest work in website design and development, web
+              application development.
+            </h4>
+          </div>
           {appObjects.map((x, idx) => {
             return (
               <Card
                 style={{
-                  width: '30rem',
+                  width: '40rem',
                   margin: '2em 3em',
-                  backgroundColor: '#eeeeed',
                   marginBottom: '5em',
+                  border: 'none',
+                  zIndex: '1',
                 }}
+                className="project-image"
                 key={idx + x.link}
               >
-                <Card.Img
-                  style={{ padding: '2.5em', paddingBottom: '2em' }}
-                  variant="top"
-                  src={x.imagePath}
-                />
-                <Card.Body style={{ backgroundColor: '#ffffff' }}>
+                <Card.Img variant="top" src={x.imagePath} />
+                <Card.Body
+                  style={{ backgroundColor: '#ffffff', padding: '2em' }}
+                >
                   <Card.Title>{x.name}</Card.Title>
                   <Card.Text>{x.description}</Card.Text>
                   <br /> <br />
