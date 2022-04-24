@@ -2,36 +2,33 @@
     position: absolute;
     top: 10vh;
     left: 0;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     height: 90vh;
     width: 100vw;
     background-color: transparent;
 }
 
-#title-line {    
-    position: absolute;
-    top: 30%; 
-    font-size: 5em;
-    background: none;
-    z-index: 1;
-}
 
 .homepage-title {
     position: absolute;
-    width: 100vw;
-    margin: 0 auto;
-    top: 50%;
-    font-size: 2.5em;
+    top: 12%;
+    font-size: 2em;
     background: none;
     z-index: 1;
-}
-
-
+    display: inline;
+    left: 4em;
+    text-align: left;
+} 
 .homepage-title:hover {
     cursor: none;
-    /* color:  #a8e6cea4; */
 }
+
+#title-line {    
+    font-size: 100px;
+    left: 0;
+    padding-bottom: 1em;
+} 
 
 #tsparticles {
     /* z-index: 999999; */
