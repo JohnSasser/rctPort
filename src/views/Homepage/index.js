@@ -86,14 +86,13 @@ const Homepage = () => {
   return (
     <div id="homepage-container">
       <Particles id="tsparticles" options={particleOptions}></Particles>{' '}
-      <h1 id="title-line" className="homepage-title">
-        {' '}
-        John Sasser{' '}
-      </h1>
-      <h4 className="homepage-title">
-        Web & Mobile <br />
-        Application Developer
-      </h4>
+      <div className="homepage-title">
+        <h1 id="title-line"> John Sasser </h1>
+        <h4>
+          Web & Mobile <br />
+          Application Developer
+        </h4>
+      </div>
     </div>
   );
 };
