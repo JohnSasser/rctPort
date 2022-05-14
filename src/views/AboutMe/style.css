@@ -14,17 +14,20 @@
 .about-section-text {
     display: flex;
     align-items: center;
-    justify-content: center;
-    line-height: 1.35em;
+    /* justify-content: flex-start; */
+    text-align: left;
+    line-height: 1.15em;
+    width: 86%;
+    font-weight: 400;
     color: #213a50de;
     padding: 3em;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 #technologies-icons-parent-div {
     background: linear-gradient(#75819c, #ffffffcc);
     padding: 1.4em;
-    height: 45vh;
+    height: 40vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

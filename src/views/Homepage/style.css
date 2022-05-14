@@ -37,14 +37,20 @@
 }
 
 @media screen and (max-width: 800px) {
-    #title-line {
-        top: 35%;
-        font-size: 3em;
-    }
+   
     .homepage-title {
-        top: 55%;
+        top: 15%;
         font-size: 2em;
+        margin: 0 auto;
+        left: 0;
+        text-align: center;
+    } 
+
+    #title-line {
+        font-size: 3em;
+        text-align: center;
     }
+
     .tsparticles-canvas-el {
         background-color: transparent;
     }
