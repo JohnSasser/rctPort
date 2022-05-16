@@ -1,12 +1,11 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import { frontEndSVGs, backEndSVGs, toolsSVGs } from '../../utils/vectorJSX.js';
-import {content1} from '../AboutMe/content.js';
+import { aboutMeText1 } from '../AboutMe/content.js';
 import './style.css';
 
 // import { Container, Row, Col } from 'react-bootstrap';
 // console.log(content.content1);
-
 
 const AboutMe = () => {
   const headshot = process.env.PUBLIC_URL + '/images/bike-race-headshot.jpeg';
@@ -31,9 +30,7 @@ const AboutMe = () => {
         <div className="about-section-pic">
           <img id="headshot-image" src={`${headshot}`} alt="headshot" />
         </div>
-        <div className="about-section-text">
-          {content1}
-        </div>
+        <div className="about-section-text">{aboutMeText1}</div>
       </div>
       <div id="technologies-icons-parent-div">
         {frontEndVectors.map(svgFunction => {

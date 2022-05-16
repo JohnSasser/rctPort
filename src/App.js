@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar windowWidth={width} />
-        <Route exact path="/">
+        <Route exact path="/" path="/*">
           <Homepage />
         </Route>
         <Route path="/reactPortfolio">
