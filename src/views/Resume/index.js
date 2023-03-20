@@ -6,9 +6,10 @@ import { FaFileDownload } from 'react-icons/fa';
 import './style.css';
 // import Footer from '../../components/Footer';
 
-let yellowResume = process.env.PUBLIC_URL + '/dev-resume-yellow-background.pdf';
+// let yellowResume = `${process.env.PUBLIC_URL}/dev-resume-yellow-background.pdf`;
 // let blueResume = process.env.PUBLIC_URL + '/dev-resume-blue-background.pdf';
-let devResume = process.env.PUBLIC_URL + '/web-dev-resume-blue.pdf';
+// let devResume = `${process.env.PUBLIC_URL}/web-dev-resume-blue.pdf`;
+let implementationResume = `${process.env.PUBLIC_URL}/resume-implementation-integrations.pdf`;
 
 export default function Resume(props) {
   // const [pageSize, setPageSize] = useState();
@@ -33,14 +34,12 @@ export default function Resume(props) {
     <div id="resume-page-container">
       {' '}
       <div id="button-container">
-        {pageNumber > numPages - 1 ? (
+        {pageNumber >= 2 ? (
           <Button
             onClick={previousPage}
             id="button-forward"
-            variant={pageNumber > numPages - 1 ? 'info' : 'secondary'}
-            className={
-              pageNumber > numPages - 1 ? 'active-button' : 'inactive-button'
-            }
+            variant={pageNumber >= 2 ? 'info' : 'secondary'}
+            className={pageNumber >= 2 ? 'active-button' : 'inactive-button'}
           >
             previous page
           </Button>
@@ -48,10 +47,8 @@ export default function Resume(props) {
           <Button
             onClick={previousPage}
             id="button-forward"
-            variant={pageNumber > numPages - 1 ? 'info' : 'secondary'}
-            className={
-              pageNumber > numPages - 1 ? 'active-button' : 'inactive-button'
-            }
+            variant={pageNumber >= 2 ? 'info' : 'secondary'}
+            className={pageNumber >= 2 ? 'active-button' : 'inactive-button'}
             disabled
           >
             previous page
@@ -61,7 +58,7 @@ export default function Resume(props) {
           <p>
             Page {pageNumber} of {numPages}
           </p>
-          <a id="download-icon" href={devResume} target="blank">
+          <a id="download-icon" href={implementationResume} target="blank">
             <span id="download-icon-text"> OPEN PDF </span>
             <FaFileDownload />
           </a>
@@ -86,7 +83,7 @@ export default function Resume(props) {
             id="button-back"
             variant={pageNumber > numPages - 1 ? 'secondary' : 'info'}
             className={
-              pageNumber < numPages ? 'active-button' : 'inactive-button'
+              pageNumber < numPages - 1 ? 'active-button' : 'inactive-button'
             }
           >
             {' '}
@@ -100,7 +97,7 @@ export default function Resume(props) {
       >
         <Document
           id="react-pdf-doc"
-          file={devResume}
+          file={implementationResume}
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} />
@@ -111,7 +108,7 @@ export default function Resume(props) {
     <div id="resume-page-container">
       {' '}
       <div className="center-content">
-        <a id="download-icon" href={devResume} target="blank">
+        <a id="download-icon" href={implementationResume} target="blank">
           <FaFileDownload />
           <br />
 
