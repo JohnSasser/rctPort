@@ -9,6 +9,8 @@ import './style.css';
 
 const AboutMe = () => {
   const headshot = process.env.PUBLIC_URL + '/images/bike-race-headshot.jpeg';
+  const headshot_2 = process.env.PUBLIC_URL + '/images/john-headshots-7.jpg';
+  const headshot_3 = process.env.PUBLIC_URL + '/images/headshot-min.jpg';
 
   // console.log('headshot:', headshot);
 
@@ -28,7 +30,7 @@ const AboutMe = () => {
     <>
       <div id="aboutMe-container">
         <div className="about-section-pic">
-          <img id="headshot-image" src={`${headshot}`} alt="headshot" />
+          <img id="headshot-image" src={`${headshot_2}`} alt="headshot" />
         </div>
         <div className="about-section-text">{aboutMeText1}</div>
       </div>
