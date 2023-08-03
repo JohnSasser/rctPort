@@ -7,14 +7,14 @@
   /* background-color: linear-gradient(to top, #332e27aa, #ffffff); */
 }
 
-.application_header {
+.page_header {
   color: #ecf6fede;
   padding-top: .35em;
   text-shadow: 2px 2px 3px rgba(218, 242, 249, 0.32);
   font-size: 5em;
 }
 
-.application_sub_header {
+.page_sub_header {
   color: rgba(208, 222, 226, 0.85);
   font-size: 2.25em;
   padding: 1.5em;

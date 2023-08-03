@@ -35,8 +35,8 @@ const Portfolio = () => {
               padding: '2em',
             }}
           >
-            <h1 className="application_header">Applications & Sites</h1>
-            <h4 className="application_sub_header">
+            <h1 className="page_header">Applications & Sites</h1>
+            <h4 className="page_sub_header">
               Check out the latest work in website design and application
               development.
             </h4>
