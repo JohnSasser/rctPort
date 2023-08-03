@@ -1,19 +1,49 @@
 import { FaStrava } from 'react-icons/fa';
 export const aboutMeText1 = (
   <p>
-    I am a driven Software Developer with a strong enthusiasm for crafting
+    {/* I am a driven Software Developer with a strong enthusiasm for crafting
     visually appealing and technically sophisticated web-based solutions. My
-    expertise lies primarily in front-end development, complemented by extensive
-    back-end/full stack experience. This coupling enables me to contribute
-    effectively on a diverse array of projects in a collaborative environment.
+    expertise lies primarily in front-end development, complemented with a
+    strong back-end/full stack comprehension. This coupling enables me to
+    contribute effectively on a diverse array of projects in a collaborative
+    environment.
     <br />
     <br />
-    Continuous learning, adaptability, and innovation are the pillars of my
-    professional growth. Engaging with clients and collaborating closely with
+    I take pride in my adaptability, and innovation through a continuous
+    learning mindset. Engaging with clients and collaborating closely with
     fellow team members to ensure top-notch deliverables are created are aspects
     that I relish.
-    <br />I race bicycles is my free time to keep my work clean, semantic &
-    maintainable. Check out bike stuff{' '}
+    */}
+    🌐 <span style={{ paddingRight: ' 10px' }}></span> As a passionate web
+    developer, I craft digital experiences that bridge the gap between
+    creativity and functionality. With 3+ years of hands-on experience, I've
+    honed my skills in turning ideas into responsive and user-friendly websites.
+    <br />
+    <br />
+    🛠️ <span style={{ paddingRight: ' 10px' }}></span> My toolbox includes a
+    variety of technologies such as HTML, CSS, JavaScript, and I'm well-versed
+    in popular libraries and frameworks like React and Vue.js. I thrive on
+    staying up-to-date with the latest industry trends and emerging technologies
+    to create modern, sleek, and efficient web solutions.
+    <br />
+    <br />
+    🎨 <span style={{ paddingRight: ' 10px' }}></span> Design isn't just how it
+    looks, but also how it works. I am deeply committed to creating intuitive
+    and seamless user interfaces that provide exceptional user experiences.
+    Whether it's a personal blog, a robust e-commerce platform, or a dynamic web
+    application, I approach every project with enthusiasm and attention to
+    detail.
+    <br />
+    <br />
+    🤝 <span style={{ paddingRight: ' 10px' }}></span> Collaborative by nature,
+    I excel in cross-functional teams, working closely with designers, UX
+    experts, and backend developers to transform visions into reality. Effective
+    communication and teamwork are at the core of my development process,
+    ensuring that every project is delivered on time and exceeds expectations.
+    <br />
+    <br />
+    🚴‍♂️ <span style={{ paddingRight: ' 10px' }}></span>I race bicycles is my free
+    time to keep my work clean, semantic & maintainable. Check out bike stuff{' '}
     <span>
       <a
         className="fa-sm"

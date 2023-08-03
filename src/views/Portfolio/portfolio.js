@@ -37,8 +37,8 @@ const Portfolio = () => {
           >
             <h1 className="page_header">Applications & Sites</h1>
             <h4 className="page_sub_header">
-              Check out the latest work in website design and application
-              development.
+              Check out some website design and application
+              development projects
             </h4>
           </div>
           {appObjects.map((x, idx) => {
