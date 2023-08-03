@@ -35,27 +35,10 @@ const Portfolio = () => {
               padding: '2em',
             }}
           >
-            <h1
-              style={{
-                fontSize: '5em',
-                color: 'white',
-                opacity: '.8',
-                paddingTop: '.5em',
-              }}
-            >
-              Applications & Sites
-            </h1>
-            <h4
-              style={{
-                fontSize: '2em',
-                color: 'white',
-                opacity: '.65',
-                margin: '.5em',
-                padding: '1.5em',
-              }}
-            >
-              Check out the latest work in website design and development, web
-              application development.
+            <h1 className="application_header">Applications & Sites</h1>
+            <h4 className="application_sub_header">
+              Check out the latest work in website design and application
+              development.
             </h4>
           </div>
           {appObjects.map((x, idx) => {
