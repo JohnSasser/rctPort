@@ -42,7 +42,9 @@ const ContactMe = () => {
             </span>
             <MdEmail />{' '}
             <span className="contact-credentials">
-              cw.john.sasser@gmail.com
+              <a target={'_blank'} href="mailto:cw.john.sasser@gmail.com">
+                cw.john.sasser@gmail.com
+              </a>
             </span>
             <br />
             <MdPhoneIphone />{' '}
@@ -97,8 +99,6 @@ const ContactMe = () => {
           </Button>
         </Form>{' '}
       </div>
-
-      <Footer />
     </>
   );
 };

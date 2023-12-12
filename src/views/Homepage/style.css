@@ -21,7 +21,7 @@
   top: 12%;
   font-size: 2em;
   background: none;
-  z-index: 1;
+  z-index: -1;
   display: inline;
   left: 4em;
   text-align: left;

@@ -27,9 +27,7 @@ export default function Resume(props) {
   function previousPage() {
     setPageNumber(pageNumber - 1);
   }
-  // console.log('numPages:', numPages);
-  // console.log('pageNumber:', pageNumber);
-  // console.log(props.windowWidth);
+
   return props.windowWidth > 800 ? (
     <div id="resume-page-container">
       {' '}
@@ -59,8 +57,8 @@ export default function Resume(props) {
             Page {pageNumber} of {numPages}
           </p>
           <a id="download-icon" href={implementationResume} target="blank">
-            <span id="download-icon-text"> OPEN PDF </span>
             <FaFileDownload />
+            download
           </a>
         </div>
 
@@ -110,10 +108,7 @@ export default function Resume(props) {
       <div className="center-content">
         <a id="download-icon" href={implementationResume} target="blank">
           <FaFileDownload />
-          <br />
-
-          <br />
-          <span id="download-icon-text"> OPEN PDF </span>
+          download
         </a>
       </div>
     </div>
