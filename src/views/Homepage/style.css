@@ -1,57 +1,64 @@
 #homepage-container {
-    position: absolute;
-    top: 10vh;
-    left: 0;
-    /* align-items: center; */
-    /* justify-content: center; */
-    height: 90vh;
-    width: 100vw;
-    background-color: transparent;
+  position: absolute;
+  display: block;
+  top: 10vh !important;
+  left: 0;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 90vh;
+  width: 100vw;
+  background-color: transparent;
 }
 
+.particleCanvas {
+  height: 90% !important;
+  width: 100% !important;
+  top: 10% !important;
+}
 
 .homepage-title {
-    position: absolute;
-    top: 12%;
-    font-size: 2em;
-    background: none;
-    z-index: 1;
-    display: inline;
-    left: 4em;
-    text-align: left;
-} 
+  position: absolute;
+  top: 12%;
+  font-size: 2em;
+  background: none;
+  z-index: 1;
+  display: inline;
+  left: 4em;
+  text-align: left;
+}
 .homepage-title:hover {
-    cursor: none;
+  cursor: none;
 }
 
-#title-line {    
-    font-size: 100px;
-    left: 0;
-    padding-bottom: 1em;
-} 
+#title-line {
+  font-size: 100px;
+  left: 0;
+  padding-bottom: 1em;
+}
 
 #tsparticles {
-    /* z-index: 999999; */
-    height: 100%;
-    width: 100%;
+  /* z-index: 999999; */
+
+  top: 10vh !important;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 800px) {
-   
-    .homepage-title {
-        top: 15%;
-        font-size: 2em;
-        margin: 0 auto;
-        left: 0;
-        text-align: center;
-    } 
+  .homepage-title {
+    top: 15%;
+    font-size: 2em;
+    margin: 0 auto;
+    left: 0;
+    text-align: center;
+  }
 
-    #title-line {
-        font-size: 3em;
-        text-align: center;
-    }
+  #title-line {
+    font-size: 3em;
+    text-align: center;
+  }
 
-    .tsparticles-canvas-el {
-        background-color: transparent;
-    }
+  .tsparticles-canvas-el {
+    background-color: transparent;
+  }
 }
