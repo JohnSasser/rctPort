@@ -18,17 +18,10 @@ const Portfolio = () => {
   let { path, url } = useRouteMatch();
 
   return (
-    <div
-      id="portfolio"
-      style={
-        {
-          // backgroundImage: `url(${backgroundsvg})`,
-        }
-      }
-    >
+    <div id="portfolio">
       <Switch>
         <Route exact path={url}>
-          <div
+          {/* <div
             style={{
               width: '100vw',
               backgroundColor: '#6C6E70 ',
@@ -37,10 +30,9 @@ const Portfolio = () => {
           >
             <h1 className="page_header">Applications & Sites</h1>
             <h4 className="page_sub_header">
-              Check out some website design and application
-              development projects
+              Check out some website design and application development projects
             </h4>
-          </div>
+          </div> */}
           {appObjects.map((x, idx) => {
             return (
               <Card

@@ -1,10 +1,9 @@
 #portfolio {
   width: 100vw;
-  /* background: linear-gradient(to bottom, #6E6E6E, #ffffff); */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* background-color: linear-gradient(to top, #332e27aa, #ffffff); */
+  margin-top: 2.5vh;
 }
 
 .page_header {
