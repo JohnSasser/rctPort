@@ -61,8 +61,6 @@ const AboutMe = () => {
           );
         })}
       </div>
-
-      <Footer />
     </>
   ) : null;
 };
