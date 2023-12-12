@@ -7,7 +7,7 @@
   "fullScreen": {
     "enable": false
   },
-  "fpsLimit": 60,
+  "fpsLimit": 40,
   "interactivity": {
     "detectsOn": "canvas",
     "events": {
@@ -39,7 +39,7 @@
   },
   "particles": {
     "color": {
-      "value": "#A8E6CE00"
+      "value": "#808080"
     },
     "links": {
       "color": "#000111",
